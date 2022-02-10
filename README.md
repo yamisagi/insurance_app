@@ -1,4 +1,4 @@
-# insurance_app
+# Insurance App For My Company [CNDN Sigorta]
 
 It is a demo app.
 
