@@ -1,0 +1,10 @@
+{
+    "last_updated": "Wed, 09 Feb 2022 17:54:24 GMT",
+    "routes": [
+        {
+            "file_path": "views/insurance/insurance_view.dart",
+            "route_name": "insuranceViewRoute",
+            "view_name": "InsuranceView"
+        }
+    ]
+}
