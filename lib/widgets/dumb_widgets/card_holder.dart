@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:insurance_app/widgets/dumb_widgets/texts.dart';
 
 class CardHolder extends StatelessWidget {
@@ -50,6 +51,7 @@ class CardHolder extends StatelessWidget {
                       width: height,
                       child: Text(
                         inText,
+                        style: GoogleFonts.oswald(fontWeight: FontWeight.w500),
                         textAlign: TextAlign.left,
                       ),
                     ),
