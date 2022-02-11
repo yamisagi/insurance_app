@@ -3,10 +3,13 @@ import 'package:insurance_app/widgets/dumb_widgets/texts.dart';
 
 class CardHolder extends StatelessWidget {
   const CardHolder({
+    this.iconName,
+    this.inText,
     @required this.assetName,
     @required this.text,
     @required this.height,
     @required this.width,
+    this.iconColor,
     this.radius,
     Key key,
   }) : super(key: key);
@@ -15,11 +18,15 @@ class CardHolder extends StatelessWidget {
   final double width;
   final String text;
   final String assetName;
+  final IconData iconName;
+  final String inText;
+  final Color iconColor;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       child: Card(
+          shadowColor: Colors.black,
           child: Column(
             children: [
               Row(
@@ -29,16 +36,36 @@ class CardHolder extends StatelessWidget {
                   arrowButton(),
                 ],
               ),
+              SizedBox(
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Icon(iconName, color: iconColor),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    SizedBox(
+                      width: height,
+                      child: Text(
+                        inText,
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               Expanded(
                 child: SizedBox(
                   height: 50,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(bottom: 5.0),
                     child: Image(
                       image: AssetImage(
                         assetName,
                       ),
-                      fit: BoxFit.contain,
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),

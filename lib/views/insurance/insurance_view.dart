@@ -48,11 +48,14 @@ class _InsuranceViewState extends State<InsuranceView> {
                   SizedBox(height: 10),
                   CustomText(
                       text: "email@email.com",
-                      fontSize: 13,
+                      fontSize: 15,
                       color: Colors.black,
                       fontWeight: FontWeight.w400),
                   SizedBox(height: 30),
                   CardHolder(
+                    iconName: Icons.visibility_off,
+                    inText: "Detay",
+                    iconColor: Colors.amber,
                     assetName: "assets/circ.png",
                     text: "Hesabım",
                     radius: 20.0,
@@ -60,6 +63,9 @@ class _InsuranceViewState extends State<InsuranceView> {
                     width: 300,
                   ),
                   CardHolder(
+                    iconColor: Colors.green,
+                    iconName: Icons.paid,
+                    inText: "Bekleyen Ödemeler",
                     assetName: "assets/bar.png",
                     text: "Ödemeler",
                     radius: 20.0,

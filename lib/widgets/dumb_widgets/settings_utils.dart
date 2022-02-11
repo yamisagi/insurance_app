@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:insurance_app/widgets/dumb_widgets/dumb_searchBar_method.dart';
+import 'package:insurance_app/widgets/dumb_widgets/dumb_searchbar_method.dart';
 
 
 
